@@ -6,6 +6,14 @@
     */
 
     //ENTRADA
+    let populacao = 80000
+    let anos = 1
+    for ( anos ; populacao <= 200000; anos++){
+        populacao = populacao * 1.03;
+        if(populacao > 200000){
+            document.write(`Demorou um total de ${anos} anos para chegar a um total de ${Math.round(populacao)} habitantes`)
+        }
+    }
 
     
     //PROCESSAMENTO

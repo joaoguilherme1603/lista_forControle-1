@@ -7,6 +7,27 @@
 
     //ENTRADA
 
+    let NumberS = Number(prompt(`Insira o numero inicial`));
+    let NumberE = Number(prompt(`Insira o numero final`));
+    let numerosP = []
+    let numerosI = []
+
+    if(NumberE > NumberS){
+        for(i = NumberS; i <= NumberE; i++){
+            Math.ceil(i)
+            if(i%2 == 0){
+                numerosP.push(i)
+            }
+            else{
+                numerosI.push(i)
+            }
+        }
+    }else{
+        alert(`INVALIDO!! Lembre-se, o numero inicial precisa ser menor que o numero final!!!`);
+        window.location.reload(true);
+    }
+    document.write(`Os numeros pares entre ${NumberS} e ${NumberE} são: ${numerosP.join(", ")} <br> 
+    Os numeros impares são: ${numerosI.join(", ")}`)    
     
     //PROCESSAMENTO
 

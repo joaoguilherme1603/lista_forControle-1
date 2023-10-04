@@ -5,6 +5,14 @@
     */
 
     //ENTRADA
+    let multiplos = []
+    for(i = 100; i >= 3; i--){
+        if(i/3 == Math.round(i/3)){
+            multiplos.push(i)
+        }
+    }
+    multiplos.sort((a, b) => a - b)
+    document.write(multiplos.join(", "))
 
 
     //PROCESSAMENTO

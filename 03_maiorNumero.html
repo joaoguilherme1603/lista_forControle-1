@@ -7,6 +7,13 @@
     */
 
     //ENTRADA
+    let numeros = []
+    for(i = 5; i>=1; i--){
+        numero = Number(prompt(`Informe o numero (${numeros} numeros restantes)`))
+        numeros.push(numero)
+    }
+    let mn = Math.max(...numeros)
+    document.write(`O maior numero dentre os que você disse é o ${mn}`)
 
     
     //PROCESSAMENTO

@@ -10,7 +10,15 @@
     */
 
     //ENTRADA
-
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let reservadas = []
+    for (i = 0; i < listaDeLetras.length; i++){
+        let letra = listaDeLetras[i].toLowerCase();
+        if(reservadas.includes(letra) == false){
+            reservadas.push(letra)
+        }
+    }
+    document.write(reservadas.sort().join(", "));
     
     //PROCESSAMENTO
 
